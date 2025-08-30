@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Simple Progress Bar Web App</title>
+    </head>
+    <body>
+        <h1>Simple Progress Bar Web App</h1>
+        <input type="number" id="progressInput">
+        <progress id="progressBar" value="0" max="100"></progress>
+        <button onclick="updateProgress()">Update Progress</button>
+        <script>
+            function updateProgress() {
+                const progressInput = document.getElementById('progressInput');
+                const progressBar = document.getElementById('progressBar');
+                progressBar.value = progressInput.value;
+            }
+        </script>
+    </body>
+</html>
