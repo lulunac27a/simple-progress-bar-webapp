@@ -1,20 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <title>Simple Progress Bar Web App</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1>Simple Progress Bar Web App</h1>
-        <input type="number" id="progressInput">
-        <progress id="progressBar" value="0" max="100"></progress>
-        <button onclick="updateProgress()">Update Progress</button>
-        <script>
-            function updateProgress() {
-                const progressInput = document.getElementById('progressInput');//progress input
-                const progressBar = document.getElementById('progressBar');//progress bar
-                progressBar.value = Math.max(0, Math.min(100, parseFloat(progressInput.value)));//update progress bar value from 0 to 100
-            }
-        </script>
-    </body>
+  <head>
+    <title>Simple Progress Bar Web App</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Simple Progress Bar Web App</h1>
+    <input type="number" id="progressInput" />
+    <progress id="progressBar" value="0" max="100"></progress>
+    <button onclick="updateProgress()">Update Progress</button>
+    <script>
+      function updateProgress() {
+        const progressInput = document.getElementById("progressInput"); //progress input
+        const progressBar = document.getElementById("progressBar"); //progress bar
+        progressBar.value = Math.max(
+          0,
+          Math.min(100, parseFloat(progressInput.value)),
+        ); //update progress bar value from 0 to 100
+      }
+    </script>
+  </body>
 </html>
