@@ -11,7 +11,7 @@
             function updateProgress() {
                 const progressInput = document.getElementById('progressInput');
                 const progressBar = document.getElementById('progressBar');
-                progressBar.value = progressInput.value;
+                progressBar.value = parseFloat(progressInput.value);
             }
         </script>
     </body>
