@@ -11,9 +11,9 @@
         <button onclick="updateProgress()">Update Progress</button>
         <script>
             function updateProgress() {
-                const progressInput = document.getElementById('progressInput');
-                const progressBar = document.getElementById('progressBar');
-                progressBar.value = Math.max(0, Math.min(100, parseFloat(progressInput.value)));
+                const progressInput = document.getElementById('progressInput');//progress input
+                const progressBar = document.getElementById('progressBar');//progress bar
+                progressBar.value = Math.max(0, Math.min(100, parseFloat(progressInput.value)));//update progress bar value from 0 to 100
             }
         </script>
     </body>
